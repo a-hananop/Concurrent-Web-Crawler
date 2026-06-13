@@ -69,10 +69,18 @@ input[type=text]:focus{border-color:#1D9E75;background:#fff}
 .domain-count{width:24px;text-align:right;color:#999;font-size:11px}
 
 .err-banner{background:#FCEBEB;border:1px solid #F7C1C1;border-radius:8px;padding:10px 14px;font-size:12px;color:#791F1F;margin-bottom:10px;display:none}
-@media(max-width:640px){
-  .metrics{grid-template-columns:1fr 1fr}
-  .two-col{grid-template-columns:1fr}
-  .bottom-grid{grid-template-columns:1fr}
+@media(max-width: 800px) {
+  .two-col { grid-template-columns: 1fr; }
+  .bottom-grid { grid-template-columns: 1fr; }
+}
+@media(max-width: 640px) {
+  .metrics { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .log-entry { grid-template-columns: 24px 16px 1fr 40px 36px; font-size: 10.5px; }
+  .topbar { flex-direction: column; align-items: flex-start; gap: 12px; }
+}
+@media(max-width: 480px) {
+  body { padding: 16px; }
+  .metrics { grid-template-columns: 1fr; }
 }
 </style>
 </head>
