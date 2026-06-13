@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Web Crawler Dashboard</title>
+<title>GoSpider Dashboard</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css"/>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -13,7 +13,6 @@ body{font-family:system-ui,-apple-system,sans-serif;background:#f8f9fa;color:#1a
 .brand{display:flex;align-items:center;gap:10px}
 .brand-icon{width:38px;height:38px;border-radius:10px;background:#fff;border:1px solid #e0e0e0;display:flex;align-items:center;justify-content:center;font-size:20px}
 .brand-name{font-size:16px;font-weight:600}
-.brand-sub{font-size:12px;color:#888}
 .status-pill{display:flex;align-items:center;gap:6px;font-size:12px;padding:6px 14px;border-radius:20px;border:1px solid #e0e0e0;background:#fff;color:#666}
 .dot{width:7px;height:7px;border-radius:50%;background:#ccc;transition:background .3s}
 .dot.running{background:#1D9E75;box-shadow:0 0 0 3px #9FE1CB}
@@ -84,8 +83,7 @@ input[type=text]:focus{border-color:#1D9E75;background:#fff}
     <div class="brand">
       <div class="brand-icon">🕷</div>
       <div>
-        <div class="brand-name">Web Crawler Dashboard</div>
-        <div class="brand-sub">Connected to Go backend · localhost:8080</div>
+        <div class="brand-name">GoSpider Dashboard</div>
       </div>
     </div>
     <div class="status-pill"><div class="dot" id="dot"></div><span id="status-text">Connecting...</span></div>

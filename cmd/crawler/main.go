@@ -73,7 +73,7 @@ func handleStart(w http.ResponseWriter, r *http.Request) {
 		state.mu.Unlock()
 	}
 
-	ctx, cancel := context.WithCancel(context.Background())
+	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Minute)
 	state.running = true
 	state.startTime = time.Now()
 	state.cancel = cancel
